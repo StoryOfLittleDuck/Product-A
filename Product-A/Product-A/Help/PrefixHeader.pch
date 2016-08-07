@@ -1,0 +1,58 @@
+//
+//  PrefixHeader.pch
+//  Product-A
+//
+//  Created by 林建 on 16/6/24.
+//  Copyright © 2016年 林建. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+TWFrame.h"
+#import "NSString+Html.h"
+#import "MusicModel.h"
+#import "DBManager.h"
+#import "RequestManager.h"
+#import "MyPlayerManager.h"
+#import "DownloadManager.h"
+#import "UserInfoManager.h"
+#import "MusicDownloadTable.h"
+#import <UIImageView+WebCache.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+
+//腾讯开放平台（对应QQ和QQ空间）SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+
+//微信SDK头文件
+#import "WXApi.h"
+#import <MJRefresh.h>
+#import <Masonry.h>
+#import "FMDB.h"
+#import "AdjustHeight.h"
+#import <AFNetworking.h>
+#define kDetailTalk @"http://api2.pianke.me/group/posts_info"
+#define kTalkUrl @"http://api2.pianke.me/group/posts_hotlist"
+#define kDetailProduct @"http://api2.pianke.me/group/posts_info"
+#define kReply @"http://api2.pianke.me/comment/get"
+#define kReplyAdd @"http://api2.pianke.me/comment/add"
+#define kReplyDelete @"http://api2.pianke.me/comment/del"
+#define kUrlProduct @"http://api2.pianke.me/pub/shop"
+#define kUrl @"http://api2.pianke.me/read/columns"
+#define kdetailUrl @"http://api2.pianke.me/article/info"
+#define kListUrl @"http://api2.pianke.me/read/columns_detail"
+#define kRadioURL @"http://api2.pianke.me/ting/radio"
+#define kRadioDetailURL @"http://api2.pianke.me/ting/radio_detail"
+#define kRadioListURL @"http://api2.pianke.me/ting/radio_list"
+#define kLoginUrl  @"http://api2.pianke.me/user/login" //登录接口的地址
+#define kRegistUrl @"http://api2.pianke.me/user/reg"   //注册接口的地址
+#define kMoveDistance (kScreenWidth/5.0)
+#define  PKCOLOR(R,G,B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+#define KNaviH 40
+#define kMySqliteName @"良辰美景.sqlite"
+#define kDownloadTable @"神盾局"
+#endif /* PrefixHeader_pch */
