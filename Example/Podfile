@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CocoapodDemo_Example' do
+  pod 'CocoapodDemo', :path => '../'
+
+  target 'CocoapodDemo_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
